@@ -1,0 +1,44 @@
+html{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+    margin-right, margin-left: 10px;
+    padding-right: 40px;
+    padding-left: 40px;
+    background-color: #3b5998;
+}
+
+h1{
+	color: #ffffff;
+	text-align: center;
+}
+
+p{
+	color:#afbdd4;
+	text-align: center;
+}
+
+h3{
+	color: #ffffff;
+	text-align: center;
+}
+
+a{
+	color: #afbdd4;
+	font-style: italic;
+	text-decoration: none;
+}
+
+a:hover{
+	color: blue;
+}
+
+div{
+	height: 30%; 
+	width: 100%;"
+}

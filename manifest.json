@@ -1,0 +1,39 @@
+{
+    "name": "Facebook Data Collector",
+
+    "version": "0.1",
+
+    "manifest_version": 2,
+
+    "description" : "All Facebook users concerned about privacy/data usage can use this extension. 
+    The Facebook Data Collection will gather numerical data on how much information a user is providing to Facebook while using the page. 
+    It will start collecting data at the beginning of a Facebook session and output numerical data at the end.",
+
+    "icons": {"16": "16X16.png"},
+
+    "omnibox": { "keyword" : "facebook" },
+
+    "permissions": ["tabs", "*://*.facebook.com/*"],
+
+    "browser_action": {
+        "default_icon": { "16": "16x16.png" },
+        "default_title": "Facebook Data Collector",
+        "default_popup": "popup.html"
+    },
+
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+
+    "content_scripts": [{
+        "matches": ["*://*.facebook.com/*"],
+        "js": ["scrollingContent.js", "canvasjs.min.js"]
+    },
+    {
+        "matches": ["http://*/*", "https://*/*"],
+        "js" : ["externalContent.js", "canvasjs.min.js"]
+    }],
+
+    "devtools_page": "devtools/devtools.html"
+}

@@ -1,0 +1,28 @@
+<!DOCTPYE html>
+<!-- This popup can be shown twice: when the user clicks on it to see the data given to facebook at actual time and at the end of a facebook session.  -->
+
+<html>
+
+	<head>
+		<title> Facebook Data Collector </title>
+		<link rel='stylesheet' type='text/css' href='popup.css'/>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:400,400,300italic,900,100' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<h1>Facebook Data Collector</h1>
+		<p> The amount of data you have given away in this session: </p>
+
+		<h3> Scrolling Time </h3>
+		<div id="scrollingContainer"> </div>
+
+		<h3> Outsider Links </h3>
+		<div id="externalContainer"> </div>
+
+		<p> Click <a href='FBDataCollectorWeb/index.html' id='myLink' target = "_blank"> here </a> to go to our website! </p>
+
+		<script type="text/javascript" src="popup.js"></script>
+		<script type="text/javascript" src="canvasjs.min.js"></script>
+	</body>
+
+</html>
