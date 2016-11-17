@@ -55,4 +55,4 @@ function checkFB(element) {
 }
 
 
-// setInterval(init, 2000);
+setInterval(init, 2000);
